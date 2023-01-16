@@ -1,0 +1,20 @@
+def addNums(n, m, d):
+    summa = n + m + d
+    return summa
+
+
+def getlargest(n, m, d):
+    if n > m:
+        if n > d:
+            return n
+        else:
+            return d
+    else:
+        if m > d:
+            return m
+        else:
+            return d
+
+
+n, m, d = 15, 8, 10
+print(getlargest(n, m, d))
